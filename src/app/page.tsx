@@ -41,7 +41,7 @@ export default function Home() {
           </Button>
         </div>
         <InfiniteMovingCards
-          className="md:mt-[3rem] mt-[-100px]"
+          className="md:mt-[5rem] mt-[-100px]"
           items={clients}
           direction="right"
           speed="slow"
