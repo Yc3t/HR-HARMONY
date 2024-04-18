@@ -41,8 +41,8 @@ const Navbar = async (props: Props) => {
           </li>
         </ul>
       </nav>
-      <aside className='flex items-center gap-4'>
-      <Link
+      <aside className="flex items-center gap-4">
+        <Link
           href="/dashboard"
           className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
         >
@@ -51,10 +51,8 @@ const Navbar = async (props: Props) => {
             {true ? 'Dashboard' : 'Get Started'}
           </span>
         </Link>
-        {//user
-        }
-        <MenuIcon className='md:hidden'/>
-        </aside>
+        <MenuIcon className="md:hidden" />
+      </aside>
     </header>
   )
 }
