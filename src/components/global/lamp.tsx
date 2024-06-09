@@ -7,10 +7,7 @@ import { SparklesCore } from './sparkles'
 export function LampComponent() {
   return (
     <LampContainer>
- <br></br>
-
-
-{/*        <motion.h1
+      <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -22,7 +19,7 @@ export function LampComponent() {
       >
         Plans That
         <br /> Fit You Best
-      </motion.h1>  */}
+      </motion.h1>
     </LampContainer>
   )
 }
@@ -37,7 +34,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        'relative flex min-h-[310px] flex-col items-center justify-center overflow-hidden bg-neutral-950 w-full rounded-md z-0 ',
+        'relative flex min-h-[800px] flex-col items-center justify-center overflow-hidden bg-neutral-950 w-full rounded-md z-0',
         className
       )}
     >
@@ -53,7 +50,7 @@ export const LampContainer = ({
           style={{
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
-          className="absolute inset-auto right-1/2 h-56 overflow-visible w-[30rem] bg-gradient-conic from-gray-500 via-transparent to-transparent text-white [--conic-position:from_80deg_at_center_top]"
+          className="absolute inset-auto right-1/2 h-56 overflow-visible w-[30rem] bg-gradient-conic from-neutral-500 via-transparent to-transparent text-white [--conic-position:from_70deg_at_center_top]"
         >
           <div className="absolute  w-[100%] left-0 bg-neutral-950 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
           <div className="absolute  w-40 h-[100%] left-0 bg-neutral-950  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
@@ -69,7 +66,7 @@ export const LampContainer = ({
           style={{
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
-          className="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-gray-500 text-white [--conic-position:from_290deg_at_center_top]"
+          className="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-neutral-500 text-white [--conic-position:from_290deg_at_center_top]"
         >
           <div className="absolute  w-40 h-[100%] right-0 bg-neutral-950  bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
           <div className="absolute  w-[100%] right-0 bg-neutral-950 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
@@ -85,7 +82,7 @@ export const LampContainer = ({
             duration: 0.8,
             ease: 'easeInOut',
           }}
-          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-gray-400 blur-2xl"
+          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-neutral-400 blur-2xl"
         ></motion.div>
         <motion.div
           initial={{ width: '15rem' }}
@@ -95,7 +92,7 @@ export const LampContainer = ({
             duration: 0.8,
             ease: 'easeInOut',
           }}
-          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-gray-300 "
+          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-neutral-400 "
         ></motion.div>
 
         <div className="w-[40rem] h-40 relative">

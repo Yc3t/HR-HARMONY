@@ -11,7 +11,7 @@ const Navbar = async (props: Props) => {
       <aside className="flex items-center gap-[2px]">
         <p className="text-3xl font-bold">HR</p>
         <Image
-          src="/fuzzieLogo.png"
+          src="/thunder.png"
           width={15}
           height={15}
           alt="fuzzie logo"
@@ -19,7 +19,7 @@ const Navbar = async (props: Props) => {
         />
         <p className="text-3xl font-bold">H</p>
       </aside>
-      <nav className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%] hidden md:block">
+      <nav className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%] hidden md:block"> {/*perfect centering of 3 things */}
         <ul className="flex items-center gap-4 list-none">
           <li>
             <Link href="#">Products</Link>
@@ -41,6 +41,7 @@ const Navbar = async (props: Props) => {
           </li>
         </ul>
       </nav>
+      {/* dashboard button */}
       <aside className="flex items-center gap-4">
         <Link
           href="/dashboard"
